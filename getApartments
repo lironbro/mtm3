@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# check if valid number of parameters was given
+if($# == 0 || $# == 2 || $# > 3); then
+	echo Illegal or missing parameters
+	exit
+fi
+
+# check if the file for searching exists
+if[[ls | grep -c $1 == 0 ]]; then
+	echo File is missing
+	exit
+fi
+
+# set the values of city and limit to be those given, or default
+if($# == 1); then
+	city = haifa
+	limit=1
+else
+	city=$2
+	limit=$3
+fi
+
+paths = `find $1 -name \*.flat -print`		# the list of all paths for files which end with .flat
+apartments =()		# the array which will hold the details of all the apartments
+let index = 1		# index for running on apartments
+
+for path in paths; do		# need to sort each apartment by price, which is the 5th word, while keeping the original order, and removing repetitions
+	while read apartments[$index] < `sort -fk5ns $path | uniq`; do # probably very wrong, though about reading each line in path into an array after sorting and removing of repetitions
+		let index++
+	done
+done 
+
+#apartments, in theory, should now be a long list of every apartment. now we need to sort them by city, price, take the <limit> best ones, sort them by dates, and print
+
+
+#assuming the sorting has been done, we print the <limit> first elements in apartments array
+for apartment in apartments; do
+	echo 
+	
+	
+
+	
