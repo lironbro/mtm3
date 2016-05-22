@@ -21,7 +21,16 @@ else
 	limit=$3
 fi
 
+let index = 0
 paths = `find $1 -name \*.flat -print`		# the list of all paths for files which end with .flat
+newList=()
+for tempPath in paths; do
+	if [[ -d "$(tempPath)" ]]; then
+		head -n+$(index) < paths | tail -n+(( $(index) + 1 )) < paths > paths
+	fi
+	let index++
+done
+
 apartments =()		# the array which will hold the details of all the apartments
 let index = 1		# index for running on apartments
 
