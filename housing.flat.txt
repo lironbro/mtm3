@@ -1,0 +1,23 @@
+#apartments in Haifa
+trumpeldor 24 haifa 3 3000 052-4217542 30.3.2016
+hanita 25 haifa 5 4500 053-4215365 2.1.2016
+Hankin 23 Haifa 4 3200 053-7358234 6.3.2016
+hankin 26 Haifa 4 4000 054-4975342 18.3.2016
+trumpeldor 27 haifa 3 3100 052-4999342 24.3.2016
+horev 28 Haifa 2 2950 052-4456742 4.3.2016
+hagalil 29 haifa 3 3150 053-4262342 2.4.2016
+HANKIN 26 haifa 4 4000 054-4975342 18.3.2016
+trumpeldor 27 HAIFA 3 3100 052-4999342 24.3.2016
+horev 28 haifa 2 2900 052-4456742 4.3.2016
+# an old apartment - hankin 56 Haifa 4 4000 054-4975342 18.3.2010
+
+# This includes also apartments in Tel Aviv
+arlozorov 31 Tel Aviv 5 6650 053-4212142 2.1.2016
+even gvirol 32 tel aviv 6 6800 052-4215542 30.3.2016
+ben yehuda 33 Tel Aviv 4 5100 054-4288842 30.3.2016
+yfe nof 34 haifa 3 3500 052-4218342 30.4.2016
+hankin 26 haifa 4 4000 054-4975342 18.3.2016
+trumpeldor 27 haifa 3 3100 052-4999342 24.3.2016
+horev 28 Haifa 2 2900 052-4456742 4.3.2016
+horev 29 Haifa 2 2950 052-4456896 4.3.2016
+hayarkon 10 Tel Aviv 1 1800 053-7358234 6.3.2016
